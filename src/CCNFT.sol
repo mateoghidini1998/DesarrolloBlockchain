@@ -387,7 +387,7 @@ contract CCNFT is ERC721Enumerable, Ownable, ReentrancyGuard {
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721Enumerable, ERC721)
+        override(ERC721Enumerable)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
